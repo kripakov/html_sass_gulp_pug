@@ -1,3 +1,6 @@
+@import "var"
+
+/*  CONTAINER SETUP   =========================================================================*/
 
 .container 
 	background: #e2e2e2
@@ -12,41 +15,56 @@
 	background: #fd4
 	text-align: center
 
-.container .cols.col-1
+/*  GRID COLUMN SETUP   =========================================================================*/
+.col 
+	display: block
+	float: left
+	padding: 15px
+.col:first-child 
+	margin-left: 0 /* all browsers except IE6 and lower */
+
+/*  GRID COLUMN SETUP  END ======================================================================*/
+
+/*  COLONIUM DIV BLOCK ========================================================================== */
+
+.col-1
 	width: 8.3%
 
-.container .cols.col-2
+.col-2
 	width: 16.6%
 
-.container .cols.col-3
+.col-3
 	width: 25%
 
-.container .cols.col-4
-	width: 33%
+.col-4
+	width: 33.3%
 
-.container .cols.col-5
+.col-5
 	width: 41%
 
-.container .cols.col-6
+.col-6
 	width: 50%
 
-.container .cols.col-7
+.col-7
 	width: 58.3%
 
-.container .cols.col-8
+.col-8
 	width: 66.6%
 
-.container .cols.col-9
+.col-9
 	width: 75%
 
-.container .cols.col-10
+.col-10
 	width: 83%
 
-.container .cols.col-11
+.col-11
 	width: 91%
 
-.container .cols.col-12
+.col-12
 	width: 100%
+
+/*  COLONIUM DIV BLOCK END ====================================================================== */
+
 
 html 
 	-webkit-box-sizing: border-box
@@ -177,3 +195,7 @@ div, p, input, button, a
 	float: left
 .righter
 	float: right
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
