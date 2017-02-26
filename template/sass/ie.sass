@@ -1,0 +1,92 @@
+
+/* placeholder =========================================================================*/
+
+/* for webkit browser */
+/* for browser mozilla */
+/* Opera  */
+\::-webkit-input-placeholder, :-moz-placeholder
+  color: red
+  font-style: italic
+
+input[type=number]
+  text-align: left
+
+/* placeholder end ======================================================================*/
+
+
+/* input & textarea =====================================================================*/
+
+input
+  height: 16px
+  width: 196px
+  border: 1px solid #0000CC
+  background: #99CCFF
+  font-size: 12px
+  padding: 3px 0 3px 2px
+  font-family: Arial, Helvetica, sans-serif
+  line-height: 16px
+
+* html input
+  height: 24px
+  width: 200px
+
+input
+  &[type="text"], &[type="password"]
+    font-size: 100%
+    padding: 0
+
+textarea
+  font-size: 100%
+  padding: 0
+  font-family: arial
+
+/* input & textarea end ==================================================================*/
+
+/* button ================================================================================*/
+
+button 
+	text-align: center
+	color: #fff
+	cursor: pointer
+	width: 139px
+	height: 27px
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 7px 0 6px 0; /* for Opera */
+
+button::-moz-focus-inner 
+	padding:0
+	border:0
+
+/* button end ===========================================================================*/
+
+
+
+
+
+
+/* input search =====================================================================*/
+
+input
+  &[type=search]
+    -webkit-appearance: none
+    width: 175px
+    height: 29px
+    border: none
+    background: url(img/send-job-form-inp.png);
+    padding-left: 10px
+    padding-right: 10px
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+  &[type="search"]
+    &:focus
+      outline: none
+    &::-webkit-search-cancel-button
+      -webkit-appearance: none
+      width: 17px
+      height: 16px
+      background: url(img/send-job-form-ulpoaded-close.png)
+      margin-right: 2px
+      cursor: pointer
+/* input search =====================================================================*/
