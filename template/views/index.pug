@@ -5,9 +5,10 @@ html
   title Заголовок
   meta(name='description', content='')
   // Include Bootstrap 
-  include bootst-system/bootstrap-grid
+  //include bootst-system/bootstrap-grid
 
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(http-equiv="X-UA-Compatible", content="IE=8")
   meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
   link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
   link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
@@ -15,7 +16,89 @@ html
   link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
 
   body
-
+    header
+      #header-inner
+        a(href='javascript: void();', id='logo')
+        nav
+          a(href='javascript: void();', id='menu-icon')
+          ul
+            li
+              a(href='javascript: void();', class='current') Home
+            li
+              a(href='javascript: void();') Skills
+            li
+              a(href='javascript: void();') Portfolio
+            li
+              a(href='javascript: void();') Our Team
+            li
+              a(href='javascript: void();') Contact
+    section.banner
+      .banner-inner
+        img(src='build/img/rocket_design.png')
+    section.one-fourth#html
+      td
+        i.fa.fa-html5
+      h3 HTML
+    section.one-fourth#css
+      td
+        i.fa.fa-css3
+      h3 CSS
+    section.one-fourth#seo
+      td
+        i.fa.fa-search
+      h3 SEO
+    section.one-fourth#social
+      td
+        i.fa.fa-users
+        h3 SOCIAL
+    section.inner-wrapper
+      article#tablet
+        img(src='build/img/hand_ipad.png')
+      aside#tablet
+        h2 MOBILE. TABLET. DESKTOP
+        p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+    section.inner-wrapper-2
+      article#mobile
+        h2 ACROSS EACH DEVICE
+        p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+      aside.hand-mobile
+        img(src='build/img/hand_mobile.png')
+    section.inner-wrapper
+      article
+        img(src='build/img/desktop.png')
+      aside#desktop
+        p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+    section.inner-wrapper-3
+      section.one-third#google
+        h3 GOOGLE SEARCH
+        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+      section.one-third#marketing
+        h3 MARKETING
+        p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+      section.one-third#customers
+        h3 HAPPY CUSTOMERS
+        p But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures.
+    section#smiley
+      h2 :)
+    footer
+      ul.social
+        li
+          a(href='javascript: void();')
+            i.fa.fa-facebook
+        li
+          a(href='javascript: void();')
+            i.fa.fa-google-plus
+        li
+          a(href='javascript: void();')
+            i.fa.fa-twitter
+        li
+          a(href='javascript: void();')
+            i.fa.fa-youtube
+        li
+          a(href='javascript: void();')
+            i.fa.fa-instagramm
+    footer.second
+      p &copy: Rocket Design
     .hidden
     //if lt IE 9
       script(src='libs/html5shiv/es5-shim.min.js')
@@ -35,6 +118,7 @@ html
       loadCSS("css/fonts.min.css");                                             //User Styles: Fonts
       loadCSS("libs/normalize.css");                                            //User Styles: Normalize
       //loadCSS("css/ie.min.css");                                                   //User Styles: Include ie stylesheet
+      loadCSS("css/font-awesome.min.css");                                            //User Styles: Normalize
     script.
       var scr = {"scripts":[
         {"src" : "libs/bower_components/jquery/dist/jquery.min.js", "async" : false},
